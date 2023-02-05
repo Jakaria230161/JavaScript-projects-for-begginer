@@ -1,0 +1,9 @@
+{
+  "files.autoSave": "afterDelay",
+  "auto-close-tag.fullMode": true,
+  "auto-close-tag.SublimeText3Mode": true,
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+  "autoimport.showNotifications": true,
+  "cSpell.autoFormatConfigFile": true,
+  "cSpell.showAutocompleteSuggestions": true
+}
