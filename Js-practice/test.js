@@ -108,3 +108,22 @@ console.log(myCar.model);
 console.log(myCar ['weight']); // array er maddhome pete chaile quote use korte hobe, noyto onno ekta variable khojar chesta korbe.
 
 myCar.stop();  // this is called function which is declared in the object.
+
+function myFunction (p1, p2) {
+  return p1 * p2;
+}
+console.log(myFunction(2, 4));
+
+
+// Convert from celsius to fahrenheit
+function toCelsius (fahrenheit) {
+  return (5/9) * (fahrenheit - 32);
+}
+
+let convertedFahrenheit = toCelsius(77);
+console.log(convertedFahrenheit);
+
+// Date function for finding time
+function seeTime() {
+  document.getElementById('time').innerHTML = Date();
+}
