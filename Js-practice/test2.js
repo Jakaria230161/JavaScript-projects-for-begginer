@@ -33,3 +33,32 @@ let text10 = "I love you so much!";
 console.log(text10.endsWith("much!")); // end a ache tai true
 console.log(text10.endsWith("so")); // end a nai tai false dekhabe
 console.log(text10.endsWith("much")); // false bcz eta nai
+
+// template literals
+/* 
+1,Easily Multiline lekha jay, jemne chao r ki
+2, code error decrease kore,mane single quotes and double quotes niye jhamela.
+3, Dynamic values deowa jay,jeikhane barbar concat or + korar dorkar hoy na.
+4, you have to use $ sign , if you want to make dynamic string then you should use $ sign , rather than won't work.
+*/
+let text11 = `I love you
+do you love me?
+as like me?`;
+console.log(text11);
+
+// dynamic template literals
+let text12 = `I love you so much!`;
+let sentence = `${text12} and also loves my parents.`;
+console.log(sentence);
+
+// dynamic template
+let text13 = "Bangladesh";
+let text14 = "Pakistan";
+let mixed = `I love ${text13} and ${text14}`;
+console.log(mixed);
+
+// dynamically name attached without using concat or plus sign.
+let firstName = "Jakaria";
+let lastName = "Mahmud";
+let attachedName = `Full Name : ${firstName} ${lastName}`;
+console.log(attachedName);
