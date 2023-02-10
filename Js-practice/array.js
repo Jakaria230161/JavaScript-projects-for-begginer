@@ -177,5 +177,102 @@ let numbersSorted = points.sort(function (a, b) {
   let mined = Math.min.apply(null, minNum);
   console.log(mined); // output : 1
 
+// Array.forEach() > 
+let myArray = [1,3, 4, 5, 6, 7, 8, 9];
 
-  
+function myArrayFunction(value, index, array) {
+  console.log(value);
+  console.log(index);
+  console.log(array);
+  console.log("---------");
+}
+myArray.forEach(myArrayFunction);
+
+// map method > jeta kichu ekta return korbe, jei ta tumi return pete chao
+// map method > protita element er upor diye jabe then tomar demand onujayi value return korbe, return must thakbei map methods a , map ekta notun array return kore.
+// map methods a > return must korbe
+// exaple 1: 
+let mapArray = [2, 3, 5, 6, 7, 9];
+
+function arrayMap (value) {
+  return value * 3;
+}
+const mapArrayElement = mapArray.map(arrayMap);
+console.log(mapArrayElement);
+
+// example 02:
+let numMap = [1, 3, 5, 6, 8];
+function  numMapFunction (value) {
+  return value * 2;
+}
+const numMapArray = numMap.map(numMapFunction);
+console.log(numMapArray);
+
+// filter methods > ja notun ekta array dibe r filter asole chakni diye element ber kore ane,
+// tomar deowa (condition) onujayi. map hocche protitar upor diye jay r 
+//eta hocche condition jemon dibe, 
+// temon element gula filter kore ber kore anbe.
+// filter method a > condition thakbe > return thakbe, jeta condition er sathe match korbe seta print korbe r match na korle fele dibe.
+let filterNum = [2, 4, 45, 66, 76, 9, 29];
+
+function filterNumFunction (value) {
+  return value > 20;
+}
+const filteredNumbers = filterNum.filter(filterNumFunction);
+console.log(filteredNumbers); // output : [45, 66, 76, 29]
+
+// reduce methods > jeta ekta single values return kore
+// reduce methods > (total, values, index, array)
+// reduce > sompurno array ke 1 tay niye ase. mane array ke choto kore fele.
+// reduce a initial value deowa jay, mane 2nd parameter diye dite hoy
+let reduceNum = [ 2, 4, 5, 6, 7, 8, 9];
+
+function reduceNumFunction (total, value, index, array) {
+  console.log(total);
+  return total + value; // total(initial value or previously returned values) er sathe current value jog hoy.
+}
+const reducedNumbers = reduceNum.reduce(reduceNumFunction, 10);
+console.log(reducedNumbers); // output with initial 10 values = 51
+
+// reduce.right methods > dan theke start kre reduce, etao original array te hath na diye notun ekta single values provide kre.
+
+// filter vs every : 
+/* 
+1. filter condition onujayi alada ekta array kore dey,
+r every alada ekta single values dey, condition match korle true r noile false dey.
+2,every ta reduce er moto ekta values dey but condition match korte hoy.
+3,every ta condition check kore dekhe 
+*/
+
+let everyNum = [1, 3, 4, 5, 7];
+function everyNumFunction (value, index, array) {
+  return value > 2;
+}
+const everyNumbered = everyNum.every(everyNumFunction);
+console.log(everyNumbered); // output : false bcz sob num 2 er theke choto na.
+
+// some methods > ja ekta value condition fill up korlei true return korbe, r every er belay sob gula match kora lagtoh.
+let someNum = [2,3,4, 5, 6];
+function someNumFunction (value, index, array) {
+  return value > 4;
+}
+const someNumbered = someNum.some(someNumFunction);
+console.log(someNumbered); // output : true bcz 4 er theke sob value choto na
+
+/* 
+1, Array.indexOf > position khuje dey
+2, Array.lastIndexOf > last er index number ta bole dey
+3, find > jeta condition theke khuje dey, filter jotto gula paay sob e return kre r find just ekta return kore condition onujayi
+*/
+
+let findNum = [32,44, 55, 66, 77];
+function findNumFunction (value, index, array) {
+  return value > 44;
+}
+const findNumbered = findNum.find(findNumFunction);
+console.log(findNumbered); // output 55 bcz 44 er theke 1st boro num hocche 55 tai eta return korche kintu filter hoile sob gula kortoh.
+
+// Array.from > jeta ekta array banay and length dey r ki 
+console.log(Array.from("ABCDEFG")); // output : ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+// Array.Keys > amader notun ekta Iterator object dey. r jar moddhe amra loop korte pari.
