@@ -124,3 +124,36 @@ personOne.eat("after eating, go to bed for sleeping");
 const personTwo = new Person ("Ayesha", 24, "Hi mera wife!!");
 console.log(personOne);
 console.log(personTwo);
+
+// JSON = javascript object notation, is only text format. supported in any programming language.
+// object to json format
+const toJson = {
+  firstName: "Jakaria",
+  lastName : "Mahmud"
+};
+const convertToJson = JSON.stringify(toJson); // converted to json format
+const convertedToObj = JSON.parse(convertToJson); // converted to object format from json format
+console.log(convertedToObj);
+console.log(convertToJson);
+
+// Best practice > always variable declarations on the top
+// Declare on the top
+let firstNum, secondNum, thirdNum, fourthNum, allNum;
+// then set the value below
+firstNum = 1;
+secondNum = 2;
+thirdNum = 3;
+fourthNum = 4;
+allNum = firstNum + secondNum + thirdNum + fourthNum;
+console.log(allNum);
+
+// declare on the top all variables name
+let buyFish, buyTomato, buyPotato, buyChilly, totalBuy;
+// after declare all variables on the top then set the value below
+buyFish = 1000;
+buyTomato = 50;
+buyPotato = 100;
+buyChilly = 200;
+totalBuy = buyFish + buyTomato + buyPotato + buyChilly;
+console.log(totalBuy);
+
