@@ -191,7 +191,7 @@ myArray.forEach(myArrayFunction);
 // map method > jeta kichu ekta return korbe, jei ta tumi return pete chao
 // map method > protita element er upor diye jabe then tomar demand onujayi value return korbe, return must thakbei map methods a , map ekta notun array return kore.
 // map methods a > return must korbe
-// exaple 1: 
+// example 1: 
 let mapArray = [2, 3, 5, 6, 7, 9];
 
 function arrayMap (value) {
@@ -276,3 +276,10 @@ console.log(findNumbered); // output 55 bcz 44 er theke 1st boro num hocche 55 t
 console.log(Array.from("ABCDEFG")); // output : ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
 // Array.Keys > amader notun ekta Iterator object dey. r jar moddhe amra loop korte pari.
+
+/* 
+Array const: 
+array te const use kora uchit.
+const a reassign kora jay na, re declare kora jay na.
+const  diya array te, array kintu change kora jay na, but array er moddher element change kora jay.
+*/

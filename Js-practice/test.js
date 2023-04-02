@@ -7,6 +7,7 @@ document.getElementById('demo-1').innerHTML = "Hi there, change the result of th
 
 document.getElementById('demo-2').innerHTML = 5+5;  // show on the screen 10
 
+document.getElementById("demo-6").innerHTML = 99+1;
 
 // Declare a variable and display on the screen.
 let a, b, c
@@ -116,6 +117,13 @@ console.log(myFunction(2, 4));
 
 
 // Convert from celsius to fahrenheit
+// function toCelsius (fahrenheit) {
+//   return (5/9) * (fahrenheit - 32);
+// }
+
+// let convertedFahrenheit = toCelsius(77);
+// console.log(convertedFahrenheit);
+
 function toCelsius (fahrenheit) {
   return (5/9) * (fahrenheit - 32);
 }
@@ -157,7 +165,7 @@ let str = "Apple, Banana, Jack-fruits";
 console.log(str.slice(7, 13));
 
 let sliceFruits = "Apple, Orange, Lemon";
-let sliceFruit = sliceFruits.slice(-13); // if you want to slice using right side(minis sign) and also can slice from one side.
+let sliceFruit = sliceFruits.slice(-13); // if you want to slice using right side(minus sign) and also can slice from one side.
 console.log(sliceFruit);
 
 // substr methods this is also slice types 

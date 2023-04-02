@@ -25,7 +25,7 @@ console.log(text8.includes("loves")); // false return korbe bcz loves is not exi
 // startWith  > this is also case sensitive.
 let text9 = "I love you so much";
 console.log(text9.startsWith("I")); // return true bcz I diye start hoiche 
-console.log(text9.startsWith("I")); // return korbe false bcz eta case sensitive r i kintu nai.
+console.log(text9.startsWith("i")); // return korbe false bcz eta case sensitive r i kintu nai.
 console.log(text9.startsWith("I", 0)); // kotha theke start korbe tao bole deowa jay.
 
 // endsWith > eta just last er string tai identified korbe
