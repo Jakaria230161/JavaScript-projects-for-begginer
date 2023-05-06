@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <button id="btn">Click</button> 
+  <br>
+  <img id="changeAttribute" src="test.jpg" alt="jpg__picture">
+  <p id="todayDate">Date</p>
+
+  <form id="frm1">
+    firstName: <input type="text" name="fname" value="Jakaria"> <br>
+    lastName: <input type="text" name="lname" value="Mahmud"> <br> <br>
+    <input type="submit" value="submit">
+  </form>
+  <p id="formOne"></p>
+
+  <!-- number validation  -->
+  <p>Please input a number between 1 to 10: </p>
+  <input id="numb">
+  <button type="button" onclick="myNumberFunction()">Submit</button>
+  <p id="message"></p>
+
+  <!-- Events  exploring-->
+  <h1 id="changeText" onclick="changeText()">I am heading One</h1>
+  <h2 onclick="this.innerHTML = 'Right now I am changing by onclick events!'">I am heading two</h2>
+  <button id="myBtn">Click</button>
+  <br>
+  <input onchange="console.log('hi')" type="text" name="" id="">
+  <br>
+  <button id="btnId">Click me</button>
+  <div id="div-container">
+    <p id="mouse-over">Mouseover on me</p>
+    <button onclick="removeHandler()" id="removeListener">Remove listener</button>
+  </div>
+
+  <!-- bubbling and capturing  -->
+  <div id="container">
+    <button id="idBtn">Button</button>
+  </div>
+
+  <!-- Navigation DOM  -->
+  <p id="checker">Hi Bangladesh!!</p>
+
+  <!-- Node  -->
+  <div id="div10">
+    <p id="paragraph-1">I am first paragraph!</p>
+    <p>I am second paragraph!!</p>
+    <p id="remove">remove elements</p>
+  </div>
+  
+  <script src="./Js-practice/dom.js"></script>
+</body>
+</html>

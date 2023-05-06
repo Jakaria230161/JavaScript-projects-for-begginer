@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects & BOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- BOM exploring starts here -->
+  <div id="width"></div>
+  <div id="height"></div>
+  <div>
+    <input type="submit" value="Open window" onclick="openWindow()">
+  </div>
+  <div>
+    <input type="submit" value="Close window" onclick="closeWindow()">
+  </div>
+  <div id="availWidth"></div>
+  <div id="availHeight"></div>
+
+  <!-- Window Location  -->
+  <div id="href"></div>
+  <div id="hostname"></div>
+  <div id="pathname"></div>
+  <div id="protocol"></div>
+  <div id="port"></div>
+
+  <!-- Navigator  -->
+  <div id="onLine"></div>
+  <div id="appName"></div>
+  <div id="appCodeName"></div>
+
+  <!-- Timing events  -->
+  <div id="setTimeout"></div>
+  <div id="setTimeInterval"></div>
+  <div>
+    <input type="button" value="Start timeout" onclick="startTimeout()">
+  </div>
+  <div>
+    <input type="button" value="Stop timeout" onclick="stopTimeout()">
+  </div>
+  <div>
+    <input type="button" value="Start Interval" onclick="startInterval()">
+  </div>
+  <div>
+    <input type="button" value="Stop Interval" onclick="stopInterval()">
+  </div>
+  <!-- BOM exploring ends here  -->
+  <!-- Forms API  -->
+  <input type="number" name="number" id="id1" max="300" min="100" required>
+  <button onclick="validation()">OK!</button>
+  <p id="formValidation"></p>
+
+  <script src="./domProjects.js"></script>
+  <script src="./bom.js"></script>
+</body>
+</html>
